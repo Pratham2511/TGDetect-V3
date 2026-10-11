@@ -9,10 +9,10 @@
 <p align="center">Temporal graph detection. Clear evidence. Connected investigation.</p>
 
 <p align="center">
-  <a href="https://github.com/Pratham2511/TGDetect-V3/actions/workflows/ci.yml"><img src="https://github.com/Pratham2511/TGDetect-V3/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
-  <a href="https://github.com/Pratham2511/TGDetect-V3/releases"><img src="https://img.shields.io/badge/model-CADETS%20V3-c96c37" alt="CADETS V3 model"></a>
-  <img src="https://img.shields.io/badge/frontend-Next.js%20%2B%20React-222222" alt="Next.js and React">
-  <img src="https://img.shields.io/badge/backend-FastAPI%20%2B%20PyTorch-176958" alt="FastAPI and PyTorch">
+  <a href="https://github.com/Pratham2511/TGDetect-V3/actions/workflows/ci.yml"><img src="https://github.com/Pratham2511/TGDetect-V3/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI"></a>
+  <a href="https://github.com/Pratham2511/TGDetect-V3/releases"><img src="docs/assets/badge-model.svg" alt="CADETS V3 model"></a>
+  <img src="docs/assets/badge-frontend.svg" alt="Next.js and React">
+  <img src="docs/assets/badge-backend.svg" alt="FastAPI and PyTorch">
 </p>
 
 <p align="center">

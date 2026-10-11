@@ -54,16 +54,16 @@
       "sha256": "4721c5f02dd4b63acedf1cc943d8caceb636a78fbb568f4c35c2e53f27de324a"
     },
     "README.md": {
-      "bytes": 9549,
-      "sha256": "777ceb9258382dc7aff53cf7ad4fc4f75fa986da54e385fd78ba3baac62fe30d"
+      "bytes": 9461,
+      "sha256": "fa8ebb06401f4a0c6f6b82dd381a085eee80498473de804632c5989edaee66d0"
     },
     "SECURITY.md": {
       "bytes": 1455,
       "sha256": "6866f5923847290abe28c73b55e6bebd00e550de4650d0dd563b2a86067b4180"
     },
     "VALIDATION.json": {
-      "bytes": 1635,
-      "sha256": "223eedd25f4facbb88041b4cca51d389a6318b6a4b7a5a2d9003acef8d9d8913"
+      "bytes": 1794,
+      "sha256": "d8ad9ac573e91fe78bbe093eafbd8b2699e226c1d4aebaf2d5a759f9e4422a9e"
     },
     "backend/artifacts/sliding_v3/encoder_profile/first_result.json": {
       "bytes": 18411,
@@ -976,6 +976,18 @@
     "docs/assets/README.md": {
       "bytes": 478,
       "sha256": "7acccaf99a6af935409b692ef74ac1e0179855b57d0c05472d17ed0908347c91"
+    },
+    "docs/assets/badge-backend.svg": {
+      "bytes": 21343,
+      "sha256": "79e3c64727a038d082ab5a203f990b0562c8ba360138bf3c8b471807761a4607"
+    },
+    "docs/assets/badge-frontend.svg": {
+      "bytes": 21436,
+      "sha256": "5c881df164109c56d35cbb8bcc9fb37625ba81c456bf99ddc4225d440cc6f4c3"
+    },
+    "docs/assets/badge-model.svg": {
+      "bytes": 14139,
+      "sha256": "c8534299dc52e5b0a35716c716dc07242a14bfcd577a5dd52b2513c82f22dc4e"
     },
     "docs/assets/logo-dark.svg": {
       "bytes": 25492,

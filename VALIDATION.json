@@ -22,7 +22,15 @@
   },
   "model_change": "none; no training, threshold changes, or new experiment results",
   "legacy": "Source retained; separate DEDALE artifacts are not bundled",
-  "github_ci": "Configured; hosted job status is available in GitHub Actions",
+  "github_ci": {
+    "status": "passed",
+    "run_url": "https://github.com/Pratham2511/TGDetect-V3/actions/runs/38169895619",
+    "checks": [
+      "Source inventory",
+      "Model unit tests",
+      "Frontend lint and build"
+    ]
+  },
   "browser_checks": {
     "model_backed_overview": "passed",
     "graph_navigation_and_zoom_control": "passed",
