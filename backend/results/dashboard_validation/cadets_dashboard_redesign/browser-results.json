@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "real CADETS directed paths constructed without a backend server",
+    "bundled graph, expand/focus, zoom, keyboard event inspection",
+    "draggable entity cards",
+    "forward replay, pause, backtrace, manual stepping and scrubber",
+    "export contains actual connected chronological observations",
+    "direction controls reconstruct paths and explanations",
+    "390px mobile layout has no page overflow",
+    "reduced motion disables autoplay but allows manual tracing"
+  ],
+  "javascript_errors": [],
+  "scope": "Real CADETS through TestClient; backend server stopped."
+}

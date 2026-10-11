@@ -1,0 +1,34 @@
+flowchart TD
+    E[Chronological event: source, destination, time, relation, attributes]
+    E --> P[Offline typed key-value tokenization: two hashes + ordered bigrams]
+    P --> K[Typed KV encoder: shared 5303 x 64 table, type/numeric features, field attention]
+    K --> F[Frozen FP32 identity lookup at inference; differentiable encoding in training]
+    F --> Q[Masked-relation query embedding]
+    F --> H[Observed history embeddings]
+    E --> R[GPU history rings: 8 records per endpoint]
+    R --> W[Causal planner: 4+4 endpoint quota, recency fill, current query]
+    Q --> W
+    H --> W
+    W --> G[Two causal event-line-graph GAT layers: 128 dimensions]
+    G --> C[Residual causal CNN: kernel 3, dilations 1,2,4]
+    C --> A[Importance attention pooling: active context]
+    A --> N[Novelty + GPU count-min rarity + learned write gate]
+    A --> Z[256-to-64 event compression]
+    Z --> S[Admitted evictions into 8-slot compressed short-memory rings]
+    N --> S
+    S --> T[Merge recent short tokens; role and time features]
+    T --> C2[Second pass through the shared causal CNN]
+    C2 --> SA[Query-conditioned short-memory attention]
+    A --> SA
+    SA --> U[Gated fusion with active context]
+    A --> U
+    U --> M[Per-endpoint affine scan: fast/slow 128-D state with elapsed-time decay]
+    N --> M
+    M --> D[Endpoint-gated memory read]
+    U --> O[Relation reconstruction head: 10 classes]
+    D --> O
+    F --> B[Bilinear endpoint-pair plausibility head]
+    O --> L[Relation cross-entropy + 0.1 pair anomaly score]
+    B --> L
+    L --> V[Benign calibration + node evidence aggregation]
+    V --> X[Node anomaly scores and alerts]

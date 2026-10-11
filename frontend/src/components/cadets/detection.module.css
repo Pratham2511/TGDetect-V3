@@ -1,0 +1,83 @@
+.workspace { color: var(--app-text); }
+.heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 18px; }
+.heading p { margin: 0 0 5px; font-size: 12px; color: var(--app-muted); font-weight: 600; }
+.heading h2 { margin: 0 0 6px; font-size: 18px; font-weight: 700; letter-spacing: -.4px; }
+.heading span { font-size: 12px; color: var(--app-muted); }
+.workspace button { display: inline-flex; align-items: center; justify-content: center; gap: 7px; border: 1px solid var(--app-border); border-radius: 6px; padding: 9px 12px; min-height: 36px; font-size: 12px; font-weight: 600; color: var(--app-text); background: var(--app-surface); white-space: nowrap; }
+.workspace button:hover:not(:disabled) { background: var(--app-hover); border-color: var(--app-border-strong); }
+.presentationStats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-bottom: 20px; }
+.presentationStats > div { display: grid; grid-template-columns: 22px 1fr auto; gap: 10px; align-items: center; padding: 17px 18px; background: var(--app-surface); border: 1px solid var(--app-border); border-radius: 9px; min-width: 0; }
+.presentationStats svg { color: var(--app-muted); stroke-width: 1.7; }
+.presentationStats > div:first-child svg { color: var(--app-danger); }
+.presentationStats > div:nth-child(2) svg { color: var(--app-success); }
+.presentationStats span { color: var(--app-muted); font-size: 12px; }
+.presentationStats strong { font-size: 20px; font-weight: 700; letter-spacing: -.6px; }
+.presentationStats > div:last-child strong { font-size: 12px; letter-spacing: 0; }
+.presentationControls { display: grid; grid-template-columns: 1fr 1.3fr 1fr 1fr; gap: 14px; padding: 18px; border: 1px solid var(--app-border); border-radius: 9px; background: var(--app-surface); margin-bottom: 18px; }
+.presentationControls label { display: flex; flex-direction: column; gap: 7px; color: var(--app-muted); font-size: 12px; font-weight: 600; min-width: 0; }
+.presentationControls select { width: 100%; min-width: 0; padding: 10px 28px 10px 10px; border: 1px solid var(--app-border-strong); border-radius: 6px; font-size: 12px; font-weight: 500; background: var(--app-surface); color: var(--app-text); text-overflow: ellipsis; }
+.graphStage { overflow: hidden; border: 1px solid var(--app-border); border-radius: 10px; background: var(--app-surface); }
+.graphHud { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; padding: 14px 16px; border-bottom: 1px solid var(--app-border); }
+.graphSearch { display: flex; flex: 1; min-width: 215px; align-items: center; gap: 8px; border: 1px solid var(--app-border-strong); border-radius: 6px; color: var(--app-muted); background: var(--app-surface); padding-left: 10px; }
+.graphSearch:focus-within { outline: 2px solid var(--app-accent); outline-offset: 2px; }
+.graphSearch input { min-width: 0; width: 100%; background: transparent; color: var(--app-text); border: 0; outline: 0; font-size: 12px; }
+.graphSearch button { border: 0; border-left: 1px solid var(--app-border); border-radius: 0 5px 5px 0; color: var(--app-accent); padding: 9px 11px; }
+.hudActions { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.hudActions button { padding: 9px 10px; font-size: 12px; }
+.hopControl { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--app-muted); margin-right: 2px; }
+.hopControl select { font-size: 12px; color: var(--app-text); border: 1px solid var(--app-border-strong); border-radius: 5px; padding: 8px 3px; background: var(--app-surface); }
+.workspace .toggleActive { background: var(--app-danger-soft); color: var(--app-danger); border-color: var(--app-danger); }
+.graphViewportShell { position: relative; background: var(--app-canvas); min-height: 600px; }
+.cyGraph { width: 100%; height: clamp(560px, 68vh, 760px); min-height: 600px; }
+.graphLoading, .graphEmpty { display: flex; align-items: center; justify-content: center; gap: 12px; min-height: 600px; color: var(--app-muted); font-size: 12px; }
+.graphEmpty { position: absolute; inset: 0; pointer-events: none; }
+.graphSpinner { animation: spin 1s linear infinite; color: var(--app-accent); }
+.inlineGraphError { position: absolute; top: 14px; left: 14px; right: 14px; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 14px; color: var(--app-danger); background: var(--app-danger-soft); border: 1px solid var(--app-danger); border-radius: 7px; font-size: 12px; }
+.floatingInspector { position: absolute; top: 16px; right: 16px; width: 316px; max-height: calc(100% - 32px); overflow: auto; border: 1px solid var(--app-border-strong); border-radius: 9px; background: var(--app-surface); padding: 18px; box-shadow: var(--app-shadow); }
+.inspectorTopline { display: flex; align-items: center; gap: 9px; margin-bottom: 17px; }
+.inspectorThreatIcon, .inspectorBenignIcon { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 6px; flex-shrink: 0; }
+.inspectorThreatIcon { background: var(--app-danger-soft); color: var(--app-danger); }
+.inspectorBenignIcon { background: var(--app-success-soft); color: var(--app-success); }
+.inspectorKicker { color: var(--app-muted); font-size: 12px; font-weight: 600; }
+.inspectorTopline button { margin-left: auto; border: 0; padding: 4px; min-height: 28px; }
+.inspectorIdentity { display: flex; gap: 8px; justify-content: space-between; align-items: flex-start; }
+.inspectorIdentity > div { min-width: 0; }
+.inspectorIdentity h3 { font-size: 16px; letter-spacing: -.4px; font-weight: 700; overflow-wrap: anywhere; margin: 0; }
+.inspectorIdentity p { color: var(--app-muted); font-size: 12px; margin: 4px 0 0; }
+.threatBadge, .benignBadge { flex-shrink: 0; border-radius: 4px; font-size: 12px; font-weight: 700; padding: 4px 6px; }
+.threatBadge { background: var(--app-danger-soft); color: var(--app-danger); }
+.benignBadge { background: var(--app-success-soft); color: var(--app-success); }
+.scoreBlock { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; border-block: 1px solid var(--app-border); padding: 16px 0; margin: 18px 0 12px; }
+.scoreBlock span { display: block; color: var(--app-muted); font-size: 12px; }
+.scoreBlock strong { display: block; font-size: 17px; font-weight: 700; margin-top: 4px; }
+.inspectorFacts > div { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; padding: 7px 0; font-size: 12px; }
+.inspectorFacts span { color: var(--app-muted); }
+.inspectorFacts b { text-align: right; font-weight: 600; overflow-wrap: anywhere; }
+.inspectorActions { display: flex; flex-direction: column; gap: 8px; margin-top: 17px; }
+.workspace .inspectorPrimary { color: var(--app-on-accent); background: var(--app-accent); border-color: var(--app-accent); }
+:global(.dark) .workspace .inspectorPrimary { border-color: #ffb578; box-shadow: inset 0 1px 0 #ffffff40; font-weight: 700; }
+.workspace .inspectorPrimary:hover { background: var(--app-accent); filter: brightness(.95); }
+.inspectorDetails { font-size: 12px; color: var(--app-muted); margin-top: 16px; border-top: 1px solid var(--app-border); padding-top: 14px; }
+.inspectorDetails summary { cursor: pointer; }
+.inspectorDetails pre { font: 10px/1.7 var(--font-instrument), sans-serif; white-space: pre-wrap; overflow-wrap: anywhere; background: var(--app-subtle); padding: 10px; border-radius: 5px; }
+.graphLegend { display: flex; align-items: center; gap: 16px; padding: 13px 16px; border-top: 1px solid var(--app-border); color: var(--app-muted); font-size: 12px; flex-wrap: wrap; }
+.graphLegend > span { display: inline-flex; align-items: center; gap: 6px; }
+.graphLegend > span:nth-child(5) { margin-left: auto; }
+.graphLegend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.legendThreat { background: var(--app-danger-soft); border: 3px double var(--app-danger); }
+.legendBenign { background: var(--app-success-soft); border: 2px solid var(--app-success); }
+.graphLegend .legendAttackEdge { width: 16px; height: 2px; border-radius: 0; background: var(--app-danger); }
+.legendSelected { border: 2px solid var(--graph-selected); }
+.presentationNote { color: var(--app-muted); font-size: 12px; line-height: 1.8; margin: 12px 2px 16px; }
+.dataTools { border: 1px solid var(--app-border); border-radius: 8px; background: var(--app-surface); font-size: 12px; padding: 14px 16px; margin-bottom: 20px; }
+.dataTools summary { display: flex; align-items: center; gap: 8px; cursor: pointer; font-weight: 600; color: var(--app-muted); }
+.dataTools > div { margin-top: 16px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
+.uploadButton { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 10px 14px; border: 1px solid var(--app-border-strong); border-radius: 6px; color: var(--app-text); cursor: pointer; font-size: 12px; }
+.uploadButton:focus-within { outline: 2px solid var(--app-accent); outline-offset: 3px; }
+.uploadButton input { opacity: 0; position: absolute; inset: 0; width: 100%; cursor: pointer; }
+.uploadStatus { flex: 1; min-width: 200px; color: var(--app-muted); font-size: 12px; }
+.uploadStatus progress { display: block; width: 100%; height: 6px; margin-top: 8px; accent-color: var(--app-accent); }
+.uploadError { color: var(--app-danger); font-size: 12px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (max-width: 1280px) { .presentationStats > div { grid-template-columns: 20px 1fr; padding: 15px; gap: 7px; } .presentationStats strong { grid-column: 2; } .hudActions { flex: 1 1 100%; } .graphSearch { max-width: 380px; } .graphLegend > span:nth-child(5) { margin-left: 0; } }
+@media (max-width: 720px) { .heading { align-items: flex-start; gap: 12px; } .heading p { display: none; } .heading h2 { font-size: 16px; } .heading span { font-size: 12px; } .heading button { padding: 8px; font-size: 12px; } .presentationStats { grid-template-columns: 1fr 1fr; gap: 10px; } .presentationStats > div { padding: 13px; grid-template-columns: 18px 1fr auto; } .presentationStats strong { grid-column: 3; font-size: 19px; } .presentationStats > div:last-child strong { font-size: 12px; } .presentationControls { grid-template-columns: 1fr 1fr; padding: 14px; gap: 12px; } .presentationControls select { font-size: 12px; padding: 9px 22px 9px 8px; } .graphHud { padding: 12px; } .graphSearch { max-width: none; flex-basis: 100%; } .hudActions { gap: 6px; } .hudActions button { flex-grow: 1; padding-inline: 8px; } .hopControl { flex-grow: 1; justify-content: center; } .cyGraph { min-height: 450px; height: 450px; } .graphViewportShell { min-height: 450px; } .graphLoading, .graphEmpty { min-height: 450px; } .floatingInspector { position: relative; top: auto; right: auto; width: 100%; max-height: none; border: 0; border-top: 1px solid var(--app-border); border-radius: 0; box-shadow: none; padding: 20px; } .graphLegend { gap: 12px; padding: 13px; font-size: 12px; } .graphLegend > span:nth-child(n+5) { width: auto; } }

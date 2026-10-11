@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "bundled graph loads from dataset API with both classes",
+    "malicious selection retains connected benign context",
+    "clicking a red node fetches its actual connected neighborhood",
+    "IP dropdown focuses recorded address rather than a fixed sample",
+    "file picker uploads logs, real V3 scoring completes, uploaded graph opens automatically",
+    "uploaded host selector shows only its connected two-node component",
+    "uploaded nodes expose actual scores without invented benchmark labels",
+    "export contains selected upload and connected observed events",
+    "upload controls, selectors and graph fit 390px viewport",
+    "uploaded dataset survives page reload"
+  ],
+  "javascript_errors": [],
+  "fixture": "CADETS excerpt plus explicitly constructed isolated acceptance-test component"
+}

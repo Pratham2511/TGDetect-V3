@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
+  <style>.bg{fill:#fdf6e3}.mark{stroke:#073642}.accent{stroke:#9b3d17}@media(prefers-color-scheme:dark){.bg{fill:#000}.mark{stroke:#fff}.accent{stroke:#ff9a45}}</style>
+  <rect class="bg" width="56" height="56" rx="12"/>
+  <g transform="translate(4 4)" stroke-width="4"><path class="mark" d="M5 9h22M16 9v30"/><path class="mark" d="M28 9h4c8 0 12 6 12 15s-4 15-12 15h-4V22h9" stroke-linejoin="round"/><path class="accent" d="M5 39h11"/></g>
+</svg>

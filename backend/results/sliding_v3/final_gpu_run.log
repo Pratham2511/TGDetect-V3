@@ -1,0 +1,31 @@
+✓ Initialized. View run at 
+https://modal.com/apps/fukatkaamsathi/main/ap-7geerHyOzcj7aTd5zIOHzh
+✓ Created objects.
+├── 🔨 Created mount 
+│   /home/mahesh/Desktop/TG-Detect/research/modal_sliding_v3_benchmark.py
+├── 🔨 Created mount 
+│   /home/mahesh/Desktop/TG-Detect/research/modal_sliding_v2_benchmark.py
+├── 🔨 Created mount 
+│   /home/mahesh/Desktop/TG-Detect/research/pomsathit_baseline.py
+├── 🔨 Created mount /home/mahesh/Desktop/TG-Detect/research/causal_tgn.py
+├── 🔨 Created mount /home/mahesh/Desktop/TG-Detect/research/temporal_cnn.py
+├── 🔨 Created mount /home/mahesh/Desktop/TG-Detect/research/tgnn_components.py
+├── 🔨 Created mount /home/mahesh/Desktop/TG-Detect/research/node_memory_v3.py
+├── 🔨 Created mount 
+│   /home/mahesh/Desktop/TG-Detect/research/node_memory_models.py
+├── 🔨 Created mount /home/mahesh/Desktop/TG-Detect/research/sliding_node_mem_v3
+├── 🔨 Created mount /home/mahesh/Desktop/TG-Detect/research/sliding_node_mem
+├── 🔨 Created mount /home/mahesh/Desktop/TG-Detect/research/orthrus_comparison
+├── 🔨 Created mount 
+│   /home/mahesh/Desktop/TG-Detect/research/sliding_node_mem_upgrade
+├── 🔨 Created mount /home/mahesh/Desktop/TG-Detect/research/sliding_node_mem_v2
+├── 🔨 Created mount /home/mahesh/Desktop/TG-Detect/research/orthrus_official
+└── 🔨 Created function measure.
+Declared nodes: 2682632 fully dense ring bytes avoided: 13971147456
+Completed 32 {'v2_compatible': 11.413, 'ring_compatible_memmap': 20.589, 'ring_compatible_resident': 20.725, 'ring_corrected_resident': 21.964}
+Completed 256 {'v2_compatible': 25.245, 'ring_compatible_memmap': 21.897, 'ring_compatible_resident': 21.346, 'ring_corrected_resident': 23.458}
+Completed 1024 {'v2_compatible': 65.246, 'ring_compatible_memmap': 23.812, 'ring_compatible_resident': 22.763, 'ring_corrected_resident': 24.253}
+Saved /home/mahesh/Desktop/TG-Detect/artifacts/sliding_v3/gpu_latency.json
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/fukatkaamsathi/main/ap-7geerHyOzcj7aTd5zIOHzh

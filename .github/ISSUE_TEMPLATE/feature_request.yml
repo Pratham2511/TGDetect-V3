@@ -1,0 +1,22 @@
+name: Feature request
+description: Suggest an improvement to the investigation workspace.
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: User need
+      description: Describe the workflow and problem the change would solve.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Explain the expected interaction and any alternatives.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Optional references or sanitized examples.

@@ -1,0 +1,32 @@
+name: Bug report
+description: Report a reproducible application or setup problem.
+body:
+  - type: markdown
+    attributes:
+      value: Please use private vulnerability reporting for security issues. Do not include credentials or private telemetry.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the actual and expected behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include the workspace, selected dataset, and a minimal sanitized example when relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system, Python/Node versions, browser, and commit or release.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs or screenshots
+      description: Redact identifying data, secrets, and private paths.

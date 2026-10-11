@@ -1,0 +1,31 @@
+{
+  "backend_server": "stopped; no listener on port 8000",
+  "frontend_production_build": "passed",
+  "integration_tests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "browser": {
+    "checks": [
+      "real CADETS directed paths constructed without a backend server",
+      "bundled graph, expand/focus, zoom, keyboard event inspection",
+      "draggable entity cards",
+      "forward replay, pause, backtrace, manual stepping and scrubber",
+      "export contains actual connected chronological observations",
+      "direction controls reconstruct paths and explanations",
+      "390px mobile layout has no page overflow",
+      "reduced motion disables autoplay but allows manual tracing"
+    ],
+    "javascript_errors": [],
+    "scope": "Real CADETS through TestClient; backend server stopped."
+  },
+  "features": [
+    "entity-card graph with bundled observed links, focus, zoom and dragging",
+    "bounded directed chronological candidate attack-chain construction",
+    "forward/pause/resume/reverse playback with scrubber and contextual explanations",
+    "violet/navy palette and reduced-motion support"
+  ],
+  "model_changed": false,
+  "labels_used_for_chain_construction": false,
+  "design_reference": "https://www.elastic.co/docs/solutions/security/investigate/visual-event-analyzer"
+}

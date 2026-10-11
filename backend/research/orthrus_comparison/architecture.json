@@ -1,0 +1,44 @@
+{
+  "ORTHRUS_Reference": {
+    "learned_parameters": 764202,
+    "trainable_parameters": 764202
+  },
+  "TGNN_Node_Mem_V3_Reconstruction": {
+    "learned_parameters": 350516,
+    "trainable_parameters": 350516
+  },
+  "TGNN_Node_Mem_V4_KV": {
+    "learned_parameters": 1406516,
+    "trainable_parameters": 1406516,
+    "event_encoder": "one shared KV set encoder",
+    "event_dimension": 64,
+    "token_buckets": 16384,
+    "max_fields": 64,
+    "max_subtokens": 32,
+    "attention_heads": 4,
+    "history_slots": 5,
+    "memory_dim": 64
+  },
+  "shared": {
+    "objective": "benign relation cross entropy",
+    "relations": 10,
+    "epochs": 20,
+    "batch": 1024,
+    "lr": 1e-05,
+    "weight_decay": 1e-05,
+    "seed": 0,
+    "dataset": "CADETS_E3",
+    "feature_attributes": [
+      "type",
+      "path",
+      "cmd_line",
+      "remote_ip"
+    ],
+    "test_days": [
+      6,
+      11,
+      12,
+      13
+    ]
+  }
+}

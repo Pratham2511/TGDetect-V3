@@ -1,0 +1,19 @@
+flowchart TD
+    E[Chronological provenance events and endpoint attributes] --> W[Word2Vec endpoint features: 128 dimensions]
+    W --> T[Node type features: 3 dimensions]
+    T --> P[Separate source/destination projections: 131 to 100]
+    E --> N[Last-neighbor cache: 20 neighbors per node]
+    N --> R[Graph reindexing and cached endpoint features]
+    P --> R
+    E --> F[Historical edge-type features: 10 relations]
+    R --> G1[TransformerConv layer 1: 8 heads x 128]
+    F --> G1
+    G1 --> A[ReLU and dropout]
+    A --> G2[TransformerConv layer 2: 1 head, 64 output dimensions]
+    F --> G2
+    G2 --> H[Source and destination embeddings]
+    H --> D[Endpoint projections and two-layer relation decoder]
+    D --> C[10-class edge-type cross entropy]
+    N --> U[Insert current endpoints after neighborhood read]
+    C --> S[Matched comparison: benign calibration and node evidence aggregation]
+    S --> O[Node anomaly scores and alerts]

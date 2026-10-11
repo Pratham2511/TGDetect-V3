@@ -1,0 +1,12 @@
+.backdrop { display: none; position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; contain: strict; }
+:global(.dark) .backdrop { display: block; }
+.bloom { position: absolute; width: min(90vw, 1100px); height: min(90vh, 850px); top: -34%; right: -25%; background: radial-gradient(ellipse, #52132945 0%, #2f0a1930 34%, transparent 68%); animation: wine-drift 32s ease-in-out infinite alternate; }
+.waves { width: 100%; height: 100%; opacity: .8; }
+.ribbon { transform-origin: 85% 45%; animation: wine-flow 28s ease-in-out infinite alternate; }
+.glints { opacity: .18; animation: wine-glints 13s ease-in-out infinite alternate; }
+@keyframes wine-drift { from { transform: translate3d(0, 0, 0) scale(1); } to { transform: translate3d(-8%, 13%, 0) scale(1.08); } }
+@keyframes wine-flow { from { transform: translate3d(0, -12px, 0) rotate(-3deg) scale(1); } to { transform: translate3d(-38px, 24px, 0) rotate(3deg) scale(1.04); } }
+@keyframes wine-glints { from { opacity: .12; transform: translate3d(0, 0, 0); } to { opacity: .38; transform: translate3d(-8px, -12px, 0); } }
+@media (max-width: 720px) { .waves { opacity: .5; } .bloom { opacity: .7; } }
+@media (prefers-reduced-motion: reduce) { .bloom, .ribbon, .glints { animation: none; } .glints { opacity: .16; } }
+@media (prefers-contrast: more) { .backdrop { display: none !important; } }

@@ -1,0 +1,16 @@
+torch==2.11.0
+torch-geometric==2.6.1
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn==1.7.2
+fastapi==0.141.1
+uvicorn==0.44.0
+pydantic==2.13.4
+networkx==3.4.2
+pandas==2.3.3
+tqdm==4.67.3
+requests==2.33.1
+modal==1.4.3
+pytest==9.1.1
+httpx==0.28.1
+playwright==1.63.0

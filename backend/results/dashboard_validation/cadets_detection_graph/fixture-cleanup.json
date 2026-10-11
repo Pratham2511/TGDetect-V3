@@ -1,0 +1,10 @@
+{
+  "removed_test_upload_ids": [
+    "bc4cf93881c34795ab43ebe5f58b583b",
+    "e7576d7733ac4ce0b03068e4a0ff87bd",
+    "cf859159f32c42ffa6533273e1ee35ca",
+    "732f60258ece46aca44695a45d13f85f",
+    "0b6256d1ebf449f5a2e37691278cb4bc"
+  ],
+  "reason": "Remove only generated browser acceptance fixtures from the user dataset selector; exported test evidence retained."
+}

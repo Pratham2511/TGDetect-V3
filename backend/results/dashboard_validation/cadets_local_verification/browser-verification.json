@@ -1,0 +1,9 @@
+{
+  "checks": [
+    "Local full prepared corpus loaded in command center",
+    "Recorded CADETS IP selected; connected graph rendered from local index",
+    "Malicious CADETS starting entities use V3 predictions and retain real connected context"
+  ],
+  "javascript_errors": [],
+  "dataset": "Local CADETS E3 prepared data"
+}

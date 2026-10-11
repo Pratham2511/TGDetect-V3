@@ -1,0 +1,79 @@
+{
+  "dataset": {
+    "id": "0b6256d1ebf449f5a2e37691278cb4bc",
+    "name": "acceptance-upload.json",
+    "status": "ready",
+    "stage": "Graph ready",
+    "progress": 1,
+    "created": 1791720116.3579166,
+    "worker_pid": 621127,
+    "events": 1025,
+    "nodes": 180,
+    "alerts": 25,
+    "elapsed_seconds": 0.20275463700090768,
+    "checkpoint_sha256": "78d935ac58e54f34e3e9b89fbd23b9ca4aec95965e52b1d7712a4dfec458a345",
+    "threshold": 7.19455559329276,
+    "scoring": "Frozen CADETS V3 checkpoint, fresh chronological state, 1024-event batches, original validation calibration. Predictions on other log domains have not been validated. Host/name metadata identifies graph entities; model inputs use trained endpoint fields only."
+  },
+  "nodes": [
+    {
+      "id": 178,
+      "score": 3.751183337450091,
+      "alert": false,
+      "benchmark_member": null,
+      "attributes": {
+        "id": "browser-test-host",
+        "host": "acceptance-isolated-host",
+        "type": "subject",
+        "cmd_line": "curl",
+        "name": "browser-test-host"
+      },
+      "ip": null,
+      "prediction": "predicted_benign"
+    },
+    {
+      "id": 179,
+      "score": 3.751183337450091,
+      "alert": false,
+      "benchmark_member": null,
+      "attributes": {
+        "id": "browser-test-ip",
+        "remote_ip": "192.0.2.200",
+        "type": "netflow",
+        "name": "browser-test-ip"
+      },
+      "ip": "192.0.2.200",
+      "prediction": "predicted_benign"
+    }
+  ],
+  "events": [
+    {
+      "split": "upload",
+      "idx": 1024,
+      "src": 178,
+      "dst": 179,
+      "time": 1522987366.0570822,
+      "relation": 0,
+      "loss": 1.5254751443862915,
+      "evidence": 3.751183337450091,
+      "id": "0b6256d1ebf449f5a2e37691278cb4bc:1024",
+      "relation_name": "CONNECT"
+    }
+  ],
+  "seeds": [
+    178
+  ],
+  "threshold": 7.19455559329276,
+  "truncated": false,
+  "counts": {
+    "predicted_malicious": 0,
+    "predicted_benign": 2
+  },
+  "scope": "Connected observed neighborhoods of the selected entities. Class selection filters starting entities; connected context keeps both prediction classes. Display bounds may omit other connections.",
+  "ip_scope": "Only recorded IP addresses are displayed. Colors are model predictions, not confirmed attacks.",
+  "visible_node_ids": [
+    178,
+    179
+  ],
+  "filter": "all"
+}

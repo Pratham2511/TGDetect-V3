@@ -1,0 +1,99 @@
+.graphShell { border: 1px solid var(--app-border); border-radius: 8px; overflow: hidden; background: var(--app-canvas); color: var(--app-text); }
+.graphToolbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 14px; background: var(--app-surface); border-bottom: 1px solid var(--app-border); font-size: 12px; flex-wrap: wrap; }
+.graphToolbar > span, .graphToolbar > div { display: flex; align-items: center; gap: 8px; }
+.graphToolbar b { font-size: 12px; font-weight: 600; color: var(--app-muted); background: var(--app-subtle); border-radius: 4px; padding: 4px 6px; }
+.graphToolbar button, .playback button { background: var(--app-surface); border: 1px solid var(--app-border); border-radius: 5px; display: inline-flex; align-items: center; justify-content: center; padding: 8px; color: var(--app-text); font-size: 12px; gap: 6px; min-height: 32px; }
+.graphToolbar button:hover, .playback button:hover { background: var(--app-hover); border-color: var(--app-border-strong); }
+.graphViewport { max-height: 510px; overflow: auto; overscroll-behavior: contain; }
+.graphViewport svg { display: block; min-width: 100%; touch-action: pan-x pan-y; font-family: var(--font-instrument), sans-serif; }
+.laneLabel { fill: var(--app-muted); font-size: 10px; font-weight: 650; letter-spacing: .3px; }
+.edge { fill: none; stroke: var(--graph-edge); stroke-width: 1.8; transition: stroke .2s, opacity .2s; }
+.edgeGroup { transition: opacity .2s; }
+.edgeHit { fill: none; stroke: transparent; stroke-width: 18; cursor: pointer; }
+.edgeHit:focus-visible { stroke: color-mix(in srgb, var(--app-accent) 25%, transparent); outline: none; }
+.selectedEdge { stroke: var(--app-accent); stroke-width: 2.8; stroke-dasharray: 7 7; animation: flow 1.2s linear infinite; }
+.edgeLabel { pointer-events: none; }
+.edgeLabel rect { fill: var(--app-surface); stroke: var(--app-border); stroke-width: .8; }
+.edgeLabel text { fill: var(--app-muted); font-size: 9px; font-weight: 650; pointer-events: none; }
+.entityCard { cursor: grab; }
+.entityCard:active { cursor: grabbing; }
+.entityCard > rect:first-child { fill: var(--app-surface); stroke: var(--app-border-strong); stroke-width: 1.2; transition: fill .2s, stroke .2s; }
+.entityCard:hover > rect:first-child, .focusCard > rect:first-child { stroke: var(--app-accent); fill: var(--app-hover); }
+.seedCard > rect:first-child { fill: var(--app-accent-soft); stroke: var(--app-accent); stroke-width: 1.8; }
+.entityCard svg { stroke: var(--app-muted); pointer-events: none; }
+.seedCard svg { stroke: var(--app-accent); }
+.iconTile { fill: var(--app-subtle); stroke: none; }
+.seedCard .iconTile { fill: var(--app-surface); }
+.entityTitle { font-size: 11px; fill: var(--app-text); font-weight: 650; pointer-events: none; }
+.entityMeta { font-size: 10px; fill: var(--app-muted); pointer-events: none; }
+.entityCard:focus-visible { outline: none; }
+.entityCard:focus-visible > rect:first-child { stroke: var(--app-accent); stroke-width: 3; }
+.graphHint { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; padding: 11px 14px; font-size: 12px; color: var(--app-muted); background: var(--app-surface); border-top: 1px solid var(--app-border); }
+.graphHint i { width: 6px; height: 6px; display: inline-block; border-radius: 50%; background: var(--app-accent); margin-right: 5px; }
+.connectionSummary { display: flex; gap: 12px; align-items: center; justify-content: space-between; flex-wrap: wrap; background: var(--app-accent-soft); padding: 12px 14px; font-size: 12px; color: var(--app-accent); border-top: 1px solid var(--app-border); }
+.builder { background: var(--app-surface); border: 1px solid var(--app-border); border-radius: 10px; padding: 24px; margin-bottom: 22px; color: var(--app-text); }
+.builderHeading { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+.builderIcon { width: 36px; height: 36px; display: grid; place-items: center; flex-shrink: 0; background: var(--app-accent-soft); border-radius: 8px; color: var(--app-accent); }
+.builderHeading p { margin: 0 0 4px; font-size: 12px; color: var(--app-muted); font-weight: 600; }
+.builderHeading h2 { font-size: 18px; font-weight: 700; letter-spacing: -.5px; margin: 0; line-height: 1.4; }
+.hypothesis { margin-left: auto; padding: 5px 8px; font-size: 12px; background: var(--app-warning-soft); color: var(--app-warning); border-radius: 5px; white-space: nowrap; }
+.builderIntro { font-size: 12px; color: var(--app-muted); line-height: 1.8; margin: 0 0 18px; }
+.builderControls { display: flex; gap: 12px; align-items: flex-end; flex-wrap: wrap; padding: 15px; background: var(--app-subtle); border: 1px solid var(--app-border); border-radius: 7px; }
+.builderControls label { display: flex; flex-direction: column; gap: 6px; color: var(--app-muted); font-size: 12px; min-width: 0; }
+.builderControls label:first-child { flex: 1; min-width: 150px; }
+.builderControls select, .playback select { background: var(--app-surface); color: var(--app-text); border: 1px solid var(--app-border-strong); border-radius: 5px; padding: 9px; font-size: 12px; min-width: 0; }
+.builderControls > button { display: inline-flex; align-items: center; justify-content: center; gap: 7px; background: var(--app-accent); border: 1px solid var(--app-accent); color: var(--app-on-accent); border-radius: 6px; padding: 10px 12px; min-height: 36px; font-size: 12px; font-weight: 650; }
+.builderControls > button:hover { filter: brightness(.95); }
+:global(.dark) .builderControls > button { border-color: #ffb578; box-shadow: inset 0 1px 0 #ffffff40; font-weight: 700; }
+.pathTabs { display: flex; gap: 8px; margin: 18px 0 10px; overflow: auto; padding-bottom: 4px; }
+.pathTabs button { display: flex; gap: 8px; align-items: center; white-space: nowrap; background: var(--app-surface); border: 1px solid var(--app-border); color: var(--app-muted); border-radius: 6px; padding: 9px 12px; font-size: 12px; }
+.pathTabs span { font-size: 12px; color: var(--app-muted); }
+.pathTabs button[aria-pressed="true"] { background: var(--app-accent-soft); border-color: var(--app-accent); color: var(--app-accent); }
+.pathTabs button[aria-pressed="true"] span { color: var(--app-accent); }
+.playback { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; padding: 12px 0; }
+.playback > div { display: flex; gap: 5px; }
+.playback > span { font-size: 12px; color: var(--app-muted); }
+.playback b { color: var(--app-text); }
+.playback label { margin-left: auto; display: flex; gap: 7px; align-items: center; font-size: 12px; color: var(--app-muted); }
+.playback select { padding: 6px; }
+.pathCanvas { border: 1px solid var(--app-border); border-radius: 8px; background: var(--app-canvas); overflow: auto; padding: 28px 18px 22px; min-height: 230px; }
+.pathStrip { display: flex; align-items: center; width: max-content; gap: 0; }
+.pathStep { display: flex; align-items: center; gap: 9px; }
+.pathStep > button { position: relative; border: 1px solid var(--app-border-strong); border-radius: 8px; background: var(--app-surface); width: 220px; padding: 17px 14px; color: var(--app-muted); text-align: left; transition: border-color .2s, background-color .2s; }
+.pathStep > button:hover { border-color: var(--app-accent); }
+.activeStep > button { border: 2px solid var(--app-accent); padding: 16px 13px; background: var(--app-accent-soft); }
+.completeStep > button { border-color: var(--app-success); }
+.stepNumber { position: absolute; top: -11px; left: 14px; border: 1px solid var(--app-border-strong); background: var(--app-surface); color: var(--app-muted); font-size: 12px; padding: 2px 7px; border-radius: 4px; }
+.activeStep .stepNumber { background: var(--app-accent); border-color: var(--app-accent); color: var(--app-on-accent); }
+.pathEntity { display: grid; grid-template-columns: 20px 1fr; column-gap: 8px; row-gap: 3px; align-items: center; }
+.pathEntity svg { color: var(--app-muted); grid-row: span 2; }
+.pathEntity b { font-size: 12px; font-weight: 650; color: var(--app-text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pathEntity small { font-size: 12px; color: var(--app-muted); }
+.pathRelation { display: flex; gap: 5px; align-items: center; position: relative; color: var(--app-accent); font-size: 12px; margin: 13px 0 13px 24px; min-height: 30px; }
+.pathRelation > i { position: absolute; left: -17px; top: 0; width: 1px; height: 100%; background: var(--app-border-strong); }
+.pathRelation svg { transform: rotate(90deg); width: 13px; }
+.pathRelation em { font-style: normal; font-size: 12px; color: var(--app-accent); background: var(--app-accent-soft); border-radius: 3px; padding: 3px; margin-left: auto; }
+.playing .activeStep .pathRelation > i { background: var(--app-accent); }
+.pathStep time { display: block; font-size: 12px; color: var(--app-muted); margin: 13px 0 0 28px; }
+.join { width: 90px; display: flex; align-items: center; justify-content: center; position: relative; color: var(--app-muted); }
+.join > span { position: absolute; top: -26px; font-size: 12px; white-space: nowrap; color: var(--app-muted); }
+.join::before, .join::after { content: ""; height: 1px; background: var(--app-border-strong); width: 24px; }
+.join svg { width: 17px; }
+.scrubber { width: 100%; accent-color: var(--app-accent); margin: 20px 0 16px; cursor: pointer; }
+.story { display: flex; align-items: flex-start; gap: 14px; padding: 16px; border: 1px solid var(--app-border); background: var(--app-subtle); border-radius: 7px; min-height: 110px; }
+.storyIndex { background: var(--app-surface); color: var(--app-accent); border: 1px solid var(--app-border); border-radius: 6px; font-size: 18px; font-weight: 650; padding: 8px 11px; }
+.story > div { min-width: 0; }
+.story h3 { font-size: 12px; color: var(--app-text); font-weight: 650; margin: 0 0 8px; overflow-wrap: anywhere; }
+.story p { font-size: 12px; color: var(--app-muted); line-height: 1.8; margin: 4px 0; overflow-wrap: anywhere; }
+.story strong { color: var(--app-text); }
+.story button { padding: 7px 10px; border: 1px solid var(--app-border-strong); border-radius: 5px; background: var(--app-surface); color: var(--app-accent); font-size: 12px; margin-top: 10px; display: inline-flex; align-items: center; gap: 6px; }
+.constructionFoot { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 16px; color: var(--app-muted); font-size: 12px; }
+.constructionFoot button { display: inline-flex; gap: 6px; align-items: center; border: 0; border-radius: 5px; padding: 7px 10px; background: var(--app-subtle); color: var(--app-text); font-size: 12px; }
+.boundNote { color: var(--app-muted); font-size: 12px; line-height: 1.8; margin: 13px 0 0; }
+.state { display: flex; align-items: center; gap: 10px; padding: 18px 0; color: var(--app-muted); font-size: 12px; }
+.state[role="alert"] { color: var(--app-danger); }
+.spin { animation: spin 1s linear infinite; }
+.noMotion *, .noMotion *::before, .noMotion *::after { animation: none !important; transition: none !important; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes flow { to { stroke-dashoffset: -28; } }
+@media (max-width: 720px) { .builder { padding: 20px 18px; margin-bottom: 16px; } .builderHeading { gap: 9px; flex-wrap: wrap; } .builderHeading h2 { font-size: 17px; } .hypothesis { margin-left: 45px; } .builderControls { gap: 10px; padding: 12px; } .builderControls label:first-child { flex-basis: 100%; } .builderControls > button { width: 100%; } .graphToolbar { padding: 10px; } .graphHint { padding: 10px; } .story { padding: 13px; gap: 10px; } .storyIndex { font-size: 15px; padding: 6px 8px; } .playback label { margin-left: 0; } }

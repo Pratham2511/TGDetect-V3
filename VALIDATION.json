@@ -1,0 +1,33 @@
+{
+  "validated_at": "2026-10-11T19:50:05.675723+00:00",
+  "scope": "Reorganized TGDetect-V3 checkout; original model/backend source and artifacts retained",
+  "backend_tests": {
+    "selected_tests": 41,
+    "status": "passed",
+    "command": "python -m pytest backend/research/test_sliding_v3.py backend/research/test_orthrus_universal.py backend/research/test_cadets_dashboard.py backend/research/test_graph_uploads.py -q"
+  },
+  "frontend": {
+    "clean_install": "npm ci passed",
+    "lint": "passed across the whole frontend",
+    "production_build": "passed, including TypeScript"
+  },
+  "dataset_events": 5537964,
+  "checkpoint_sha256": "78d935ac58e54f34e3e9b89fbd23b9ca4aec95965e52b1d7712a4dfec458a345",
+  "checkpoint_source_hash_verification": "passed through real CPU replay integration test",
+  "backend_research_result_byte_comparison": "unchanged from upstream working checkout",
+  "data_installer": "fresh-directory extraction, per-file SHA-256 verification, and repeat-install verification passed",
+  "application_http_checks": {
+    "direct_summary": "passed",
+    "frontend_proxy_summary": "passed"
+  },
+  "model_change": "none; no training, threshold changes, or new experiment results",
+  "legacy": "Source retained; separate DEDALE artifacts are not bundled",
+  "github_ci": "Configured; hosted job status is available in GitHub Actions",
+  "browser_checks": {
+    "model_backed_overview": "passed",
+    "graph_navigation_and_zoom_control": "passed",
+    "black_and_solarized_themes": "passed",
+    "console_errors_and_warnings": 0,
+    "screenshots": "docs/assets/workspace-dark.png and workspace-light.png"
+  }
+}

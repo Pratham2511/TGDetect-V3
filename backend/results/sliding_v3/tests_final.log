@@ -1,0 +1,14 @@
+........................................................................ [ 90%]
+........                                                                 [100%]
+=============================== warnings summary ===============================
+../../main_env/lib/python3.10/site-packages/torch/jit/_script.py:1488
+../../main_env/lib/python3.10/site-packages/torch/jit/_script.py:1488
+  /home/mahesh/main_env/lib/python3.10/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+research/test_sliding_upgrade.py::test_end_to_end_runner_and_calibration[orthrus]
+  /home/mahesh/main_env/lib/python3.10/site-packages/sklearn/base.py:1365: ConvergenceWarning: Number of distinct clusters (1) found smaller than n_clusters (2). Possibly due to duplicate points in X.
+    return fit_method(estimator, *args, **kwargs)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+80 passed, 1 deselected, 3 warnings in 14.88s

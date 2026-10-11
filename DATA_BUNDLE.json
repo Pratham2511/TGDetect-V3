@@ -1,0 +1,10 @@
+{
+  "url": "https://github.com/Pratham2511/TGDetect-V3/releases/download/cadets-v3-data-v1/cadets-v3-local-data.tar.gz",
+  "sha256": "b8ec89b395116938b72e42b47745aaead3645c5620c0236f4afabd728dfa54af",
+  "bytes": 274031175,
+  "contains": "Local CADETS E3 prepared corpus, V3 checkpoint, frozen token bank, saved validation/test scores, and investigation index",
+  "events": 5537964,
+  "upstream_url": "https://github.com/MaheshMarathe005/TGDetect/releases/download/v3-dashboard-2026-10-11/cadets-v3-local-data.tar.gz",
+  "archive_prefix": "dashboard/data/cadets_v3/",
+  "install_prefix": "backend/dashboard/data/cadets_v3/"
+}

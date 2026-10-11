@@ -1,0 +1,17 @@
+{
+  "dataset": "CADETS_E3",
+  "local_directory": "/home/mahesh/Desktop/TG-Detect/dashboard/data/cadets_v3",
+  "events": {
+    "train": 3526541,
+    "val": 105481,
+    "test": 1905942
+  },
+  "total_events": 5537964,
+  "integrity_checks_passed": 11,
+  "indexed_events": {
+    "train": 3526541,
+    "val": 105481,
+    "test": 1905942
+  },
+  "storage": "Existing locally downloaded prepared corpus; no duplicate download or GPU use."
+}

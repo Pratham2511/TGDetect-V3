@@ -1,0 +1,34 @@
+# Local environments, credentials and caches
+.venv
+venv/
+.env
+.env.*
+!.env.example
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.cache/
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+*.log
+.DS_Store
+.idea/
+.vscode/
+
+# Model/corpus files are distributed as a verified release asset.
+# Uploaded telemetry is local and must never enter the source repository.
+backend/dashboard/data/
+backend/research/data/
+backend/research/artifacts/
+backend/artifacts/*
+!backend/artifacts/sliding_v3/
+!backend/artifacts/v3_vs_orthrus/
+!backend/artifacts/sliding_v3/**/*.log
+!backend/results/**/*.log
+
+# Local test reports and downloads
+playwright-report/
+test-results/
+*.tar.gz

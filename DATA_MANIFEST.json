@@ -1,0 +1,78 @@
+{
+  "dataset": "DARPA TC CADETS E3",
+  "events": 5537964,
+  "files": {
+    "backend/dashboard/data/cadets_v3/best.pt": {
+      "bytes": 3169166,
+      "sha256": "78d935ac58e54f34e3e9b89fbd23b9ca4aec95965e52b1d7712a4dfec458a345"
+    },
+    "backend/dashboard/data/cadets_v3/investigation.sqlite": {
+      "bytes": 813883392,
+      "sha256": "4543080a4e8f38660fb8bc223f2097dc161e99d07399f1f5742c32f4180c7027"
+    },
+    "backend/dashboard/data/cadets_v3/node_attributes.json": {
+      "bytes": 123526654,
+      "sha256": "07cb0af6853c113b3fc69e8fe874b56754f499936ddbea79786bf9b3db558641"
+    },
+    "backend/dashboard/data/cadets_v3/result.json": {
+      "bytes": 78858,
+      "sha256": "79df25ae3846c3f1a5dfde1e8d92568d09ac8b7d3e1adcdc53e8f83ef33a1010"
+    },
+    "backend/dashboard/data/cadets_v3/source_manifest.json": {
+      "bytes": 694173,
+      "sha256": "f6762cece5e1c35faeca3c40664255bfe29fb39d258426fc1e3ba8366b665871"
+    },
+    "backend/dashboard/data/cadets_v3/test_edges.bin": {
+      "bytes": 60990144,
+      "sha256": "b9d7da422763ccc255885c65bb1a8b6d303bf8569f782a466dd4cfd42594b41b"
+    },
+    "backend/dashboard/data/cadets_v3/val_edges.bin": {
+      "bytes": 3375392,
+      "sha256": "4710fb8296858201c153c1d7fad915f0f09d69d9b3eee3588734e342f8ae794c"
+    },
+    "backend/dashboard/data/cadets_v3/prepared/benign_paths.jsonl": {
+      "bytes": 1948242,
+      "sha256": "b4773b55bd1b4bd52d3ad3ed8f9711509f27f16eaa2599f79f54a593987ec572"
+    },
+    "backend/dashboard/data/cadets_v3/prepared/ground_truth_nodes.json": {
+      "bytes": 584,
+      "sha256": "ede6015dde119ec741e89d2195bb3b52ea5a81ca781ad235dd70dfdf1bbbe87b"
+    },
+    "backend/dashboard/data/cadets_v3/prepared/manifest.json": {
+      "bytes": 1301,
+      "sha256": "620ea86a9a95c3fed379c8bab2cc7950cb1141751b93029a6c439eaadebef0b0"
+    },
+    "backend/dashboard/data/cadets_v3/prepared/test.bin": {
+      "bytes": 154381302,
+      "sha256": "efb61e56f5303a1b114be42d036187f139a227132910c9aa70872bade4ac2519"
+    },
+    "backend/dashboard/data/cadets_v3/prepared/train.bin": {
+      "bytes": 285649821,
+      "sha256": "870de821d74d78f7a76238b918b706ecbf6ececb0a58e64192fc77e0fcb52bf2"
+    },
+    "backend/dashboard/data/cadets_v3/prepared/training_pairs.sqlite": {
+      "bytes": 28491776,
+      "sha256": "4220b6ab53efef9cab9c67ab252007d62737f45af3be6fe04f13b4fdd103dba9"
+    },
+    "backend/dashboard/data/cadets_v3/prepared/val.bin": {
+      "bytes": 8543961,
+      "sha256": "b8ab4060a14f7e64209a5c5987215ebafa225533d09f53c3b381aa4c26bc468a"
+    },
+    "backend/dashboard/data/cadets_v3/prepared/tokens/fields.bin": {
+      "bytes": 135757356,
+      "sha256": "55a255f09a8f645cbb4d25c73a67e3e67b05fbe204a7c5cd547d797462033649"
+    },
+    "backend/dashboard/data/cadets_v3/prepared/tokens/identities.sqlite": {
+      "bytes": 16961536,
+      "sha256": "7273378822bbbb76189488024379ed22bfab5cde7f39b42723cf815de284d366"
+    },
+    "backend/dashboard/data/cadets_v3/prepared/tokens/offsets.npy": {
+      "bytes": 374872,
+      "sha256": "79d611c11688b7bdd06f0af2430d77308527e2443487a3fb372c3b219d66f9f9"
+    },
+    "backend/dashboard/data/cadets_v3/prepared/tokens/tokens.json": {
+      "bytes": 179,
+      "sha256": "fa601bec8e2ecbf413eb9cbfad880f4a00cfcfc20978bd01684b279eb007dbb2"
+    }
+  }
+}

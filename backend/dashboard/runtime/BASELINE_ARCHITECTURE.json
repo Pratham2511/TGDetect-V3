@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "model_id": "POMSATHIT_PAPER_SPEC",
+  "status": "BLOCKED_UNRESOLVED_SPECIFICATION",
+  "implementation_stage": "skeleton_only",
+  "paper_doi": "10.1109/ACCESS.2025.3639270",
+  "paper_explicit": {
+    "gnn_layers": 3,
+    "hidden_dim": 128,
+    "activation": "ReLU",
+    "dropout": 0.2,
+    "aggregation_family": "attention",
+    "prediction_target": "node",
+    "output_activation": "softmax",
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "batch_size": 256,
+    "epochs_per_scenario": 200,
+    "seed_count": 5,
+    "rehearsal_fraction": 0.1,
+    "buffer_update": "reservoir",
+    "generative_replay_in_proposed_model": false
+  },
+  "parameter_count": null,
+  "trainable_parameter_count": null,
+  "input_dimensions": [
+    "N",
+    null
+  ],
+  "output_dimensions": [
+    "N",
+    null
+  ],
+  "tensor_shapes": [
+    {
+      "stage": "input",
+      "shape": [
+        "N",
+        null
+      ]
+    },
+    {
+      "stage": "gnn_1",
+      "shape": [
+        "N",
+        128
+      ]
+    },
+    {
+      "stage": "gnn_2",
+      "shape": [
+        "N",
+        128
+      ]
+    },
+    {
+      "stage": "gnn_3",
+      "shape": [
+        "N",
+        128
+      ]
+    },
+    {
+      "stage": "node_head",
+      "shape": [
+        "N",
+        null
+      ]
+    }
+  ],
+  "trainable_modules": null,
+  "aggregation_equation": "h_next[v] = sigma(W * AGGREGATE({h[v]} union {h[u]: u in N(v)}))",
+  "attention_equation": null,
+  "activation_locations": "generic Eq.3; exact operator unresolved",
+  "dropout_locations": null,
+  "optimizer_settings": {
+    "name": "Adam",
+    "lr": 0.001,
+    "weight_decay": 1e-05,
+    "betas": null,
+    "eps": null
+  },
+  "rehearsal_settings": {
+    "fraction": 0.1,
+    "update": "reservoir",
+    "unit": null,
+    "lambda": null,
+    "sampling": null
+  },
+  "random_seed_policy": {
+    "independent_runs": 5,
+    "values": null
+  },
+  "unresolved": [
+    "original_dataset_and_split",
+    "input_dimension_and_feature_encoder",
+    "node_label_mapping_and_class_count",
+    "graph_window_and_edge_semantics",
+    "attention_equation_heads_and_self_loops",
+    "dropout_locations",
+    "loss_and_class_weighting",
+    "rehearsal_sample_unit_and_capacity_schedule",
+    "replay_sampling_and_lambda",
+    "initialization_and_seed_values",
+    "validation_and_threshold_protocol"
+  ],
+  "certified_executable_architecture": false
+}

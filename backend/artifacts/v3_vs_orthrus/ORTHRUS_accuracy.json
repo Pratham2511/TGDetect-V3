@@ -1,0 +1,75 @@
+{
+  "status": "complete",
+  "signature": {
+    "manifest": "f6762cece5e1c35faeca3c40664255bfe29fb39d258426fc1e3ba8366b665871",
+    "source": "28a13cbda1b7e63f4784f010fbaa4dfacb3367cc574764b965c501274909ad58",
+    "epochs": 5,
+    "batch": 1024,
+    "seed": 0
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 0.8166500120089345,
+      "validation_ce": 0.48811410116254267,
+      "seconds": 58.81288913199998
+    },
+    {
+      "epoch": 2,
+      "loss": 0.4929566252029964,
+      "validation_ce": 0.4793390927189989,
+      "seconds": 58.791800171999995
+    },
+    {
+      "epoch": 3,
+      "loss": 0.4779390414006246,
+      "validation_ce": 0.47812711088594995,
+      "seconds": 61.69048862799997
+    },
+    {
+      "epoch": 4,
+      "loss": 0.47060799094636924,
+      "validation_ce": 0.47803395415600114,
+      "seconds": 55.591429515000016
+    },
+    {
+      "epoch": 5,
+      "loss": 0.46664993402884014,
+      "validation_ce": 0.4786884954493743,
+      "seconds": 55.53265430900001
+    }
+  ],
+  "checkpoint_epoch": 4,
+  "parameter_count": 764202,
+  "metrics": {
+    "tn": 258398,
+    "fp": 9687,
+    "fn": 51,
+    "tp": 17,
+    "precision": 0.0017518549051937346,
+    "recall": 0.25,
+    "f1": 0.0034793286942284077,
+    "mcc": 0.01823347780533804,
+    "pr_ap": 0.002338887360666053,
+    "roc_auc": 0.7095061213026159
+  },
+  "validation_ce": 0.3272351033598468,
+  "test_ce": 0.47844327109639223,
+  "scoring_seconds": 32.55144059899993,
+  "unseen_ground_truth": [
+    336477,
+    337065,
+    370874,
+    370897
+  ],
+  "calibration": {
+    "calibration_windows": 26346,
+    "supported": true,
+    "false_alert_rate_per_node_window": 0.001,
+    "window_seconds": 900.0
+  },
+  "note": "Unchanged ORTHRUS neural architecture; matched V3 benign validation checkpoint selection and calibrated node evidence, not released top-30 rule.",
+  "gpu": "NVIDIA L4",
+  "total_seconds": 509.25261815100004,
+  "peak_cuda_bytes": 4016898560
+}

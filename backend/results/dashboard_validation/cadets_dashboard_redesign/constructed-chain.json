@@ -1,0 +1,262 @@
+{
+  "seed": 674135,
+  "anchor": {
+    "split": "test",
+    "idx": 1197075,
+    "src": 674135,
+    "dst": 350722,
+    "time": 1523540672.9165425,
+    "relation": 2,
+    "loss": 9.674760818481445,
+    "evidence": 11.519057801296604,
+    "id": "test:1197075",
+    "relation_name": "OPEN"
+  },
+  "direction": "both",
+  "max_steps": 5,
+  "seconds": 900,
+  "paths": [
+    {
+      "id": "path-1",
+      "events": [
+        {
+          "split": "test",
+          "idx": 1197075,
+          "src": 674135,
+          "dst": 350722,
+          "time": 1523540672.9165425,
+          "relation": 2,
+          "loss": 9.674760818481445,
+          "evidence": 11.519057801296604,
+          "id": "test:1197075",
+          "relation_name": "OPEN"
+        },
+        {
+          "split": "test",
+          "idx": 1197213,
+          "src": 350722,
+          "dst": 836132,
+          "time": 1523540673.046553,
+          "relation": 8,
+          "loss": 0.2700812518596649,
+          "evidence": 3.800105089224161,
+          "id": "test:1197213",
+          "relation_name": "WRITE"
+        },
+        {
+          "split": "test",
+          "idx": 1202428,
+          "src": 836132,
+          "dst": 350952,
+          "time": 1523541487.5365324,
+          "relation": 2,
+          "loss": 1.0503309965133667,
+          "evidence": 2.603335002882282,
+          "id": "test:1202428",
+          "relation_name": "OPEN"
+        },
+        {
+          "split": "test",
+          "idx": 1202459,
+          "src": 350952,
+          "dst": 2408639,
+          "time": 1523541487.556527,
+          "relation": 8,
+          "loss": 0.5330930948257446,
+          "evidence": 4.330733340286331,
+          "id": "test:1202459",
+          "relation_name": "WRITE"
+        }
+      ],
+      "evidence_sum": 22.253231233689377,
+      "anchor_step": 0
+    },
+    {
+      "id": "path-2",
+      "events": [
+        {
+          "split": "test",
+          "idx": 1197075,
+          "src": 674135,
+          "dst": 350722,
+          "time": 1523540672.9165425,
+          "relation": 2,
+          "loss": 9.674760818481445,
+          "evidence": 11.519057801296604,
+          "id": "test:1197075",
+          "relation_name": "OPEN"
+        },
+        {
+          "split": "test",
+          "idx": 1197213,
+          "src": 350722,
+          "dst": 836132,
+          "time": 1523540673.046553,
+          "relation": 8,
+          "loss": 0.2700812518596649,
+          "evidence": 3.800105089224161,
+          "id": "test:1197213",
+          "relation_name": "WRITE"
+        },
+        {
+          "split": "test",
+          "idx": 1202510,
+          "src": 836132,
+          "dst": 350952,
+          "time": 1523541487.596525,
+          "relation": 2,
+          "loss": 3.7914371490478516,
+          "evidence": 3.3734432245783554,
+          "id": "test:1202510",
+          "relation_name": "OPEN"
+        }
+      ],
+      "evidence_sum": 18.69260611509912,
+      "anchor_step": 0
+    },
+    {
+      "id": "path-3",
+      "events": [
+        {
+          "split": "test",
+          "idx": 1197075,
+          "src": 674135,
+          "dst": 350722,
+          "time": 1523540672.9165425,
+          "relation": 2,
+          "loss": 9.674760818481445,
+          "evidence": 11.519057801296604,
+          "id": "test:1197075",
+          "relation_name": "OPEN"
+        },
+        {
+          "split": "test",
+          "idx": 1197213,
+          "src": 350722,
+          "dst": 836132,
+          "time": 1523540673.046553,
+          "relation": 8,
+          "loss": 0.2700812518596649,
+          "evidence": 3.800105089224161,
+          "id": "test:1197213",
+          "relation_name": "WRITE"
+        },
+        {
+          "split": "test",
+          "idx": 1202470,
+          "src": 836132,
+          "dst": 350952,
+          "time": 1523541487.5665288,
+          "relation": 2,
+          "loss": 3.4909582138061523,
+          "evidence": 3.303039583988386,
+          "id": "test:1202470",
+          "relation_name": "OPEN"
+        }
+      ],
+      "evidence_sum": 18.62220247450915,
+      "anchor_step": 0
+    },
+    {
+      "id": "path-4",
+      "events": [
+        {
+          "split": "test",
+          "idx": 1197075,
+          "src": 674135,
+          "dst": 350722,
+          "time": 1523540672.9165425,
+          "relation": 2,
+          "loss": 9.674760818481445,
+          "evidence": 11.519057801296604,
+          "id": "test:1197075",
+          "relation_name": "OPEN"
+        },
+        {
+          "split": "test",
+          "idx": 1197173,
+          "src": 350722,
+          "dst": 2406674,
+          "time": 1523540672.996548,
+          "relation": 8,
+          "loss": 0.8093897104263306,
+          "evidence": 4.841558964052322,
+          "id": "test:1197173",
+          "relation_name": "WRITE"
+        }
+      ],
+      "evidence_sum": 16.360616765348926,
+      "anchor_step": 0
+    }
+  ],
+  "nodes": [
+    {
+      "id": 350722,
+      "score": 12.211467667453286,
+      "alert": true,
+      "benchmark_member": false,
+      "attributes": {
+        "type": "subject",
+        "path": null,
+        "cmd_line": "imapd"
+      }
+    },
+    {
+      "id": 350952,
+      "score": 6.64200010982147,
+      "alert": false,
+      "benchmark_member": false,
+      "attributes": {
+        "type": "subject",
+        "path": null,
+        "cmd_line": "imapd"
+      }
+    },
+    {
+      "id": 674135,
+      "score": 19.46643456615835,
+      "alert": true,
+      "benchmark_member": false,
+      "attributes": {
+        "type": "file",
+        "path": null
+      }
+    },
+    {
+      "id": 836132,
+      "score": 10.017241620575511,
+      "alert": true,
+      "benchmark_member": false,
+      "attributes": {
+        "type": "file",
+        "path": null
+      }
+    },
+    {
+      "id": 2406674,
+      "score": 4.841558964052322,
+      "alert": false,
+      "benchmark_member": false,
+      "attributes": {
+        "type": "file",
+        "path": null
+      }
+    },
+    {
+      "id": 2408639,
+      "score": 4.330733340286331,
+      "alert": false,
+      "benchmark_member": false,
+      "attributes": {
+        "type": "file",
+        "path": null
+      }
+    }
+  ],
+  "search_pruned": true,
+  "labels_used": false,
+  "ranking": "Sum of calibrated event evidence; a ranking aid, not an attack probability.",
+  "rule": "Consecutive edges must share destination/source; (timestamp, event index) strictly increases. No repeated entity is added.",
+  "interpretation": "Candidate attack chains constructed from recorded directed events. Endpoint and time compatibility do not prove an attack or causal flow.",
+  "selected_path": "path-1"
+}
