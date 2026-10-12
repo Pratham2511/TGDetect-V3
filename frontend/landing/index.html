@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Follow the connections. Reconstruct the sequence. TGDetect brings temporal graph investigation into one focused workspace.">
+  <title>TGDetect — Follow the trace</title>
+  <link rel="icon" href="/landing/assets/logo.svg" type="image/svg+xml">
+  <link rel="preload" href="/landing/assets/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/landing/assets/assembled.jpg" as="image" fetchpriority="high">
+  <link rel="stylesheet" href="/landing/styles.css">
+  <script type="module" src="/landing/dist/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#workspace">Skip to the workspace preview</a>
+  <header class="header">
+    <a class="brand" href="#top" aria-label="TGDetect home"><img src="/landing/assets/logo.svg" alt="" width="42" height="42"><span>TGDetect</span></a>
+    <nav aria-label="Main navigation"><a href="#assembly">The idea</a><a href="#workspace">The workspace</a><a href="https://github.com/Pratham2511/TGDetect-V3" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></nav>
+    <div class="header-actions"><button id="motion" type="button" aria-pressed="true">Motion on</button><a class="button button-small" href="/dashboard" data-workspace-link>Open workspace <span aria-hidden="true">↗</span></a></div>
+  </header>
+  <main id="top">
+    <div id="experience" class="experience">
+      <div class="visual" aria-hidden="true" data-scene="poster">
+        <img id="poster" class="poster" src="/landing/assets/assembled.jpg" width="1440" height="960" alt="" fetchpriority="high">
+        <div id="model" class="model"></div>
+      </div>
+      <section id="hero" class="hero section-pad" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="marker" aria-hidden="true"></span> Temporal graph investigation</p>
+          <h1 id="hero-title">Threats leave<br>traces</h1>
+          <p class="hero-description">See how events connect.<br>Find the sequence that tells the story.</p>
+          <div class="hero-actions"><a class="button" href="/dashboard" data-workspace-link>Follow the trace <span aria-hidden="true">↗</span></a><a class="text-link" href="#workspace">Explore the workspace <span aria-hidden="true">↓</span></a></div>
+        </div>
+        <div class="hero-bottom"><a href="#assembly">Scroll to connect the pieces <span aria-hidden="true">↓</span></a><span>From scattered signals<br>to a clearer picture</span></div>
+      </section>
+      <section id="assembly" class="assembly" aria-label="From events to investigation">
+        <div class="assembly-stage section-pad">
+          <div class="assembly-heading"><p class="eyebrow">The whole picture is in the connections</p><span id="stage-count">01 / 05</span></div>
+          <div class="chapters">
+            <article class="chapter" data-chapter="0"><h2>Start with<br>the evidence</h2><p>Processes, files, and network activity.<br>Every investigation starts with an event.</p></article>
+            <article class="chapter" data-chapter="1" hidden><h2>Connect the<br>scattered signals</h2><p>Follow the relationships between entities.<br>A graph makes the connections visible.</p></article>
+            <article class="chapter" data-chapter="2" hidden><h2>Put the sequence<br>in order</h2><p>Move through events over time.<br>See what led to the signal, and what followed.</p></article>
+            <article class="chapter" data-chapter="3" hidden><h2>See the structure<br>emerge</h2><p>Bring the graph, alerts, and supporting<br>evidence into one investigation.</p></article>
+            <article class="chapter" data-chapter="4" hidden><h2>Find your<br>next lead</h2><p>Inspect the path. Review the evidence.<br>Decide where the investigation goes next.</p></article>
+          </div>
+          <div class="assembly-bottom"><nav class="stages" aria-label="Assembly chapters"><button type="button" data-jump="0" aria-current="step"><span>01</span> Events</button><button type="button" data-jump="1"><span>02</span> Connections</button><button type="button" data-jump="2"><span>03</span> Sequence</button><button type="button" data-jump="3"><span>04</span> Context</button><button type="button" data-jump="4"><span>05</span> Investigation</button></nav><p>Scroll down to assemble <span aria-hidden="true">↓</span><br>Scroll up to look inside <span aria-hidden="true">↑</span></p></div>
+        </div>
+      </section>
+    </div>
+    <section id="workspace" class="workspace section-pad" aria-labelledby="workspace-title">
+      <div class="section-heading"><p class="eyebrow">Your investigation, in focus</p><h2 id="workspace-title">Less jumping between views<br>More following the evidence</h2><p>Explore the graph, examine an alert, and replay its timeline.<br>One workspace keeps the context with you.</p></div>
+      <div class="product-top"><div class="tabs" role="tablist" aria-label="Workspace views"><button type="button" role="tab" id="tab-graph" aria-controls="panel-graph" aria-selected="true" data-tab="graph">Explore the graph</button><button type="button" role="tab" id="tab-evidence" aria-controls="panel-evidence" aria-selected="false" tabindex="-1" data-tab="evidence">Review the evidence</button><button type="button" role="tab" id="tab-events" aria-controls="panel-events" aria-selected="false" tabindex="-1" data-tab="events">Follow the timeline</button></div><a class="text-link" href="/dashboard" data-workspace-link>Enter the workspace <span aria-hidden="true">↗</span></a></div>
+      <div class="product-panels"><figure id="panel-graph" role="tabpanel" aria-labelledby="tab-graph" tabindex="0"><img src="/landing/assets/workspace-graph.jpg" alt="TGDetect graph workspace showing connected processes, files and network entities with graph controls" width="1600" height="1000" loading="lazy"><figcaption>Search for an entity. Focus a connection. Explore the surrounding activity.</figcaption></figure><figure id="panel-evidence" role="tabpanel" aria-labelledby="tab-evidence" tabindex="0" hidden><img src="/landing/assets/workspace-evidence.jpg" alt="TGDetect alert investigation view showing evidence and a candidate event path" width="1600" height="1000" loading="lazy"><figcaption>Open an alert and inspect the events supporting it, without losing the graph context.</figcaption></figure><figure id="panel-events" role="tabpanel" aria-labelledby="tab-events" tabindex="0" hidden><img src="/landing/assets/workspace-events.jpg" alt="TGDetect events workspace showing event search and chronological activity" width="1600" height="1000" loading="lazy"><figcaption>Search the activity. Move through the sequence. Review the path over time.</figcaption></figure></div>
+    </section>
+    <section class="closing section-pad" aria-labelledby="closing-title"><p class="eyebrow">Follow the connections</p><h2 id="closing-title">Make the next<br>connection count</h2><div class="closing-actions"><a class="button" href="/dashboard" data-workspace-link>Open TGDetect <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/Pratham2511/TGDetect-V3" target="_blank" rel="noopener noreferrer">Explore on GitHub <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="footer section-pad"><div class="footer-top"><a class="brand" href="#top"><img src="/landing/assets/logo.svg" width="42" height="42" alt=""><span>TGDetect</span></a><p>A focused workspace for<br>temporal graph investigation</p></div><div class="technology"><p>Built on an open foundation</p><div class="technology-links"><a href="https://www.python.org/" target="_blank" rel="noopener noreferrer"><img src="/landing/assets/python.svg" width="28" height="28" alt="">Python</a><a href="https://pytorch.org/" target="_blank" rel="noopener noreferrer"><img src="/landing/assets/pytorch.svg" width="28" height="28" alt="">PyTorch</a><a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer"><img src="/landing/assets/typescript.svg" width="28" height="28" alt="">TypeScript</a><a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer"><img src="/landing/assets/nextdotjs.svg" width="28" height="28" alt="">Next.js</a></div></div><div class="footer-bottom"><span>Follow the trace</span><a href="https://github.com/Pratham2511/TGDetect-V3" target="_blank" rel="noopener noreferrer">Source on GitHub <span aria-hidden="true">↗</span></a><a href="#top">Back to top <span aria-hidden="true">↑</span></a></div></footer>
+  <noscript><style>.assembly{height:auto}.assembly-stage{height:auto;min-height:75svh}.assembly-bottom{margin-top:3rem}.visual{position:absolute;height:100svh}.stages,#motion{display:none}</style></noscript>
+</body>
+</html>

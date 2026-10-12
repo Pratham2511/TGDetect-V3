@@ -38,6 +38,8 @@ cd frontend
 npm run dev
 ```
 
+The frontend opens the landing page at `http://localhost:3000/`. Use **Open workspace** or visit `/dashboard` for the investigation application. `npm run dev` and `npm run build` build the landing assets automatically. After editing `frontend/landing/` during development, run `npm run build:landing` from `frontend/` to refresh them. No separate landing server is required.
+
 Use `Ctrl+C` in each service terminal to stop it. Avoid running a development server and a production build against the same `.next/` directory simultaneously.
 
 ## Common problems
@@ -45,6 +47,7 @@ Use `Ctrl+C` in each service terminal to stop it. Avoid running a development se
 | Symptom | Action |
 | --- | --- |
 | Port 3000 or 8000 is occupied | Stop the other service or select another port and adjust the frontend API origin. |
+| Landing assets are missing | Run `npm run build:landing` from `frontend/`, or rebuild with `npm run build`. Keep generated `public/landing/` beside the Next.js output when deploying. |
 | API proxy cannot connect | Start the backend, check `http://127.0.0.1:8000/api/cadets/summary`, and check the proxy origin. |
 | CADETS index unavailable | Run the verified data installer. It includes the prepared investigation index. |
 | Checkpoint/source hash mismatch | Restore the pinned research files and data bundle; do not disable validation or modify trained source to bypass it. |

@@ -37,5 +37,25 @@
     "black_and_solarized_themes": "passed",
     "console_errors_and_warnings": 0,
     "screenshots": "docs/assets/workspace-dark.png and workspace-light.png"
+  },
+  "landing_integration": {
+    "validated_at": "2026-10-12T16:46:35.908673+00:00",
+    "scope": "Approved Blender Trace Engine landing at /; unchanged CADETS dashboard moved to /dashboard",
+    "clean_npm_ci": "passed",
+    "frontend_lint": "passed",
+    "production_build_and_typescript": "passed",
+    "http_integration": "passed: landing, 12 static assets, glTF header and length, 4 same-origin CTAs, dashboard, live API proxy",
+    "integration_command": "cd frontend && npm run check:integration",
+    "browser": "Chromium with Intel UHD 620 integrated graphics",
+    "browser_checks": [
+      "landing CTA opens model-backed dashboard",
+      "detection graph loads; zoom control works",
+      "dashboard logo returns to landing",
+      "chapter control sets Blender animation frame",
+      "motion-off genuine Blender still loads"
+    ],
+    "backend_source_artifact_checksums": "All existing backend PACKAGE_MANIFEST checksums unchanged",
+    "model_or_threshold_changes": "none",
+    "other_browser_engines": "not directly tested"
   }
 }

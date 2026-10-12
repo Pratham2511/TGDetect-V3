@@ -25,7 +25,9 @@
 
 TGDetect is a local investigation workspace for security telemetry. It combines a trained temporal graph model with searchable events, connected entity graphs, alert evidence, and directed chronological chain exploration. The included checkpoint and recorded evaluation use **DARPA Transparent Computing CADETS E3**.
 
-The interface opens in black mode with restrained wine-colored motion, an original TGD monogram, and self-hosted Instrument Sans. Solarized Light is available from the theme control. Data panels keep an opaque background, and decorative motion respects reduced-motion preferences.
+The application opens with a pitch-black and orange landing page featuring the approved Blender Trace Engine and a reversible scroll assembly. Its workspace buttons open the dashboard at `/dashboard` on the same host. The dashboard opens in black mode with restrained wine-colored motion, an original TGD monogram, and self-hosted Instrument Sans. Solarized Light is available from the theme control. Data panels keep an opaque background, and decorative motion respects reduced-motion preferences.
+
+![TGDetect landing page with the animated Trace Engine](docs/assets/landing.png)
 
 ![TGDetect investigation workspace in black mode](docs/assets/workspace-dark.png)
 
@@ -86,7 +88,7 @@ npm run build
 npm run start
 ```
 
-Open **[http://localhost:3000](http://localhost:3000)**. The API is at `http://127.0.0.1:8000`; interactive API documentation is at `http://127.0.0.1:8000/docs`.
+Open **[http://localhost:3000](http://localhost:3000)** for the landing page and press **Open workspace** to enter the dashboard. The dashboard is also available directly at **[http://localhost:3000/dashboard](http://localhost:3000/dashboard)**. Both use one frontend process; the landing assets are generated automatically by the frontend build. The API is at `http://127.0.0.1:8000`; interactive API documentation is at `http://127.0.0.1:8000/docs`.
 
 For development, use `python scripts/run_backend.py --reload` and `npm run dev` in `frontend/`. To change the API origin, copy `frontend/.env.example` to `frontend/.env.local`, set `TGDETECT_API_ORIGIN`, and restart/rebuild Next.js. This value belongs to the server-side proxy.
 
@@ -96,7 +98,10 @@ See [setup and troubleshooting](docs/setup.md) for offline installation, other p
 
 ```text
 TGDetect-V3/
-├── frontend/                 # Next.js application, components, themes, fonts, logo
+├── frontend/                 # One Next.js server for landing, dashboard, and API proxy
+│   ├── landing/              # Editable HTML, animation source, and approved Blender export
+│   ├── public/landing/       # Generated landing output; ignored by Git
+│   └── src/app/dashboard/    # Existing investigation workspace at /dashboard
 ├── backend/
 │   ├── dashboard/            # FastAPI APIs, graph uploads, checkpoint runtime
 │   │   └── data/             # Local release data and uploads; ignored by Git
@@ -115,7 +120,7 @@ TGDetect-V3/
 
 Backend package names and the frozen research implementation are preserved. The frontend receives model configuration and metrics from the API. Reorganizing and redesigning the workspace does not change weights, scoring, or recorded results.
 
-The optional `/legacy` route retains the prior Sysmon interface. Its separate DEDALE artifacts are **not included** in this V3 package; its model workflows are unavailable without them. The default CADETS workspace is supplied in full.
+The optional `/legacy` route retains the prior Sysmon interface. Its separate DEDALE artifacts are **not included** in this V3 package; its model workflows are unavailable without them. The CADETS workspace at `/dashboard` is supplied in full. See [landing implementation](frontend/landing/README.md) for animation and build details.
 
 ## Architecture and reproducibility
 

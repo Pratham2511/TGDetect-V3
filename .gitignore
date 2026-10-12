@@ -32,3 +32,7 @@ backend/artifacts/*
 playwright-report/
 test-results/
 *.tar.gz
+
+# Rebuilt from frontend/landing/ by npm run dev/build.
+frontend/public/landing/
+frontend/public/.landing-build/

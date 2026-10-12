@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "build:landing": "node landing/build.mjs",
+    "check:integration": "node landing/check-integration.mjs",
+    "predev": "npm run build:landing",
     "dev": "next dev -p 3000",
+    "prebuild": "npm run build:landing",
     "build": "next build",
     "start": "next start -p 3000",
     "lint": "eslint .",
@@ -77,6 +81,10 @@
     "zustand": "^5.0.6"
   },
   "devDependencies": {
+    "animejs": "4.5.0",
+    "esbuild": "0.25.12",
+    "meshoptimizer": "1.1.1",
+    "three": "0.186.1",
     "@tailwindcss/postcss": "^4",
     "@types/react": "^19",
     "@types/react-dom": "^19",
